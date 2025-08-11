@@ -1,0 +1,44 @@
+Name;Code;Unit;Category;Description
+Elect_Identifier;0-0:96.1.1.255;;Electricity;Equipment identifier
+Elect_Delivered_Low_1;1-0:1.8.1.255;kWh;;Meter Reading electricity delivered to client (low tariff) in 0,001 kWh
+Elect_Delivered_Normal_1;1-0:1.8.2.255;kWh;;Meter Reading electricity delivered to client (normal tariff) in 0,001 kWh
+Elect_Delivered_Low_2;1-0:1.8.2.255;kWh;;Meter Reading electricity delivered by client (low tariff) in 0,001 kWh
+Elect_Delivered_Normal_2;1-0:2.8.1.255;kWh;;Meter Reading electricity delivered by client (normal tariff) in 0,001 kWh
+Tariff_Indicator;1-0:2.8.2.255;;;Tariff indicator electricity. The tariff indicator can be used to switch tariff
+Dependent_Loads;0-0:96.14.0.255;;;dependent loads e.g boilers. This is responsibility of the P1 user
+Actual_Deliverd;1-0:1.7.0.255;kW;;Actual electricity power delivered (+P) in 1 Watt resolution
+Actual_Received;1-0:2.7.0.255;kW;;Actual electricity power received (-P) in 1 Watt resolution
+Power_Failures;0-0:96.7.21.255;;;Number of power failures in any phases
+Power_Failures_Long;0-0:96.7. 9.255;;;Number of long power failures in any phases
+Power_Failure_log;1-0:99:97.0.255;;;Power failure event log
+L1_Voltage_Sags;1-0:32.32.0.255;;;Number of voltage sags in phase L1
+L2_Voltage_Sags;1-0:52.32.0.255;;;Number of voltage sags in phase L2
+L3_Voltage_Sags;1-0:72.32.0.255;;;Number of voltage sags in phase L3
+L1_Voltage_Swells;1-0:32.36.0.255;;;Number of voltage swells in phase L1
+L2_Voltage_Swells;1-0:52.36.0.255;;;Number of voltage swells in phase L2
+L3_Voltage_Swells;1-0:72.36.0.255;;;Number of voltage swells in phase L3
+L1_Voltage;1-0:32.7.0.255;V;;Instantaneous voltage L1
+L2_Voltage;1-0:52.7.0.255;V;;Instantaneous voltage L2
+L3_Voltage;1-0:72.7.0.255;V;;Instantaneous voltage L3
+L1_Current;1-0:31.7.0.255;A;;Instantaneous current L1
+L2_Current;1-0:51.7.0.255;A;;Instantaneous current L2
+L3_Current;1-0:71.7.0.255;A;;Instantaneous current L3
+L1_Power+P;1-0:21.7.0.255;kW;;Instantaneous active power L1 (+P)
+L2_Power+P;1-0:41.7.0.255;kW;;Instantaneous active power L2 (+P)
+L3_Power+P;1-0:61.7.0.255;kW;;Instantaneous active power L3 (+P)
+L1_Power-P;1-0:22.7.0.255;kW;;Instantaneous active power L1 (-P)
+L2_Power-P;1-0:42.7.0.255;kW;;Instantaneous active power L2 (-P)
+L3_Power-P;1-0:62.7.0.255;kW;;Instantaneous active power L3 (-P)
+Message;0-0:96.13.0.255;;;Text message max 1024 characters
+Gas_Device_Type_n;0-n:24.1.0.255;;;Device-Type For Channel n, n in [1, 2, 3, 4]
+Gas_Identifier_n;0-n:96.1.0.255;;;Equipment identifier For Channel n, n in [1, 2, 3, 4]
+Gas_Delivered_n;0-n:24.2.1.255;m3;;Last 5-minute value (temperature converted) For Channel n, n in [1, 2, 3, 4], gas delivered to client in m3, including decimal values and capture time
+Thermal_Device_Type_n;0-n:24.1.0.255;;;Device-Type  For Channel n, n in [1, 2, 3, 4]
+Thermal_Identifier_n;0-n:96.1.0.255;;;Equipment identifier  For Channel n, n in [1, 2, 3, 4]
+Thermal_Reading_n;0-n:24.1.0.255;GJ;;Last 5-minute Meter reading Heat or Cold in 0,01 GJ and capture time  For Channel n, n in [1, 2, 3, 4]
+Water_Device_Type_n;0-n:24.1.0.255;;;Device-Type For Channel n, n in [1, 2, 3, 4]
+Water_Identifier_n;0-n:96.1.0.255;;;Equipment identifier For Channel n, n in [1, 2, 3, 4]
+Water_Delivered_n;0-n:24.2.1.255;;;Last 5-minute Meter reading in 0,001 m3 and capture time  For Channel n, n in [1, 2, 3, 4]
+Mbus_Device_Type_n;0-n:24.1.0.255;;;Device-Type For Channel n, n in [1, 2, 3, 4]
+Mbus_Identifier_n;0-n:96.1.0.255;;;Equipment identifier For Channel n, n in [1, 2, 3, 4]
+Mbus_Delivered_n;0-n:24.2.1.255;;;Last 5-minute Meter reading and capture time  For Channel n, n in [1, 2, 3, 4]
